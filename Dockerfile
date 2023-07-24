@@ -1,9 +1,6 @@
-FROM hseeberger/scala-sbt:eclipse-temurin-11.0.14.1_1.6.2_3.1.1
+FROM hseeberger/scala-sbt:11.0.6_1.3.9_2.13.1
 
 WORKDIR /app
 
 COPY . /app
 
-RUN sbt compile
-
-CMD sbt run
